@@ -31,6 +31,29 @@
         transition: 0.5s;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
+
+      @media screen and (max-width :600px){
+         
+         .container {
+         display: grid; 
+         justify-content: space-around;
+         height: 100vh;
+         margin-left: 2rem;
+       }
+         .card {
+            overflow: hidden;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             transition: 0.5s;
+             margin-top: 2rem;
+             background-color: rgb(194, 139, 58);
+          }
+        
+          .card:hover {
+         filter: blur(0);
+         transition: 0.5s;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       }
     </style>
 </head>
 <body>
