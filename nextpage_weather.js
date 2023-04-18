@@ -24,7 +24,7 @@ function weatherdeatils (weather) {
      weatherresult.append(countrycode);
  
     let button_1 =document.createElement('button');
-    button_1.textContent  = "Back";
+    button_1.textContent  = "back";
     weatherresult.append(button_1);
  
     //styles
@@ -32,10 +32,11 @@ function weatherdeatils (weather) {
     button_1.style.border = 'none';
     button_1.style.borderRadius = '10px';
     button_1.style.padding = '0.5rem';
-    button_1.style.backgroundColor = 'lightcoral';
+    button_1.style.background = 'transparent';
     button_1.style.fontFamily ="sans-serif";
-    button_1.style.color = 'white'
-    button_1.style.width = '6rem'
+    button_1.style.color = 'red';
+    button_1.style.width = '6rem';
+    button_1.style.fontWeight = '700';
     
     weatherresult.style.fontFamily = 'sans-serif';
     weatherresult.style.textAlign = 'center';
@@ -86,7 +87,7 @@ function weatherdeatils (weather) {
      weatherresult_2.append(countrycode_2);
      
      let button_2 =document.createElement('button');
-    button_2.textContent  = "Back";
+    button_2.textContent  = "back";
     weatherresult_2.append(button_2);
  
 
@@ -95,10 +96,11 @@ function weatherdeatils (weather) {
    button_2.style.border = 'none';
    button_2.style.borderRadius = '10px';
    button_2.style.padding = '0.5rem';
-   button_2.style.backgroundColor = 'lightcoral';
+   button_2.style.backgroundColor = 'transparent';
    button_2.style.fontFamily ="sans-serif";
-   button_2.style.color = 'white'
-   button_2.style.width = '6rem'
+   button_2.style.color = 'red';
+   button_2.style.width = '6rem';
+   button_2.style.fontWeight = '700';
    
    weatherresult_2.style.fontFamily = 'sans-serif';
    weatherresult_2.style.textAlign = 'center';
@@ -150,7 +152,7 @@ function weatherdeatils (weather) {
     weatherresult_3.append(countrycode_3);
  
     let button_3 =document.createElement('button');
-    button_3.textContent  = "Back";
+    button_3.textContent  = "back";
    
      weatherresult_3.append(button_3);
     
@@ -159,10 +161,11 @@ function weatherdeatils (weather) {
     button_3.style.border = 'none';
     button_3.style.borderRadius = '10px';
     button_3.style.padding = '0.5rem';
-    button_3.style.backgroundColor = 'lightcoral';
+    button_3.style.backgroundColor = 'transparent';
     button_3.style.fontFamily ="sans-serif";
-    button_3.style.color = 'white'
+    button_3.style.color = 'red'
     button_3.style.width = '6rem'
+    button_3.style.fontWeight = '700';
     
     weatherresult_3.style.fontFamily = 'sans-serif';
     weatherresult_3.style.textAlign = 'center';

@@ -43,9 +43,10 @@
    button_1.style.border = 'none';
    button_1.style.borderRadius = '10px';
    button_1.style.padding = '0.5rem';
-   button_1.style.backgroundColor = 'lightcoral';
+   button_1.style.backgroundColor = 'rgb(194, 139, 58)';
    button_1.style.fontFamily ="sans-serif";
    button_1.style.color = 'white'
+   button_1.style.fontWeight = '600'
    
    weatherresult.style.fontFamily = 'sans-serif';
    weatherresult.style.textAlign = 'center';
@@ -104,9 +105,10 @@ function weatherdeatils2 (weather) {
    button_2.style.border = 'none';
    button_2.style.borderRadius = '10px';
    button_2.style.padding = '0.5rem';
-   button_2.style.backgroundColor = 'lightcoral';
+   button_2.style.backgroundColor = 'rgb(194, 139, 58)';
    button_2.style.fontFamily ="sans-serif";
-   button_2.style.color = 'white'
+   button_2.style.color = 'white';
+   button_2.style.fontWeight = '600';
 
   weatherresult_2.style.textAlign = "center";
   weatherresult_2.style.fontFamily = 'sans-serif';
@@ -165,9 +167,10 @@ function weatherdeatils3 (weather) {
    button_3.style.border = 'none';
    button_3.style.borderRadius = '10px';
    button_3.style.padding = '0.5rem';
-   button_3.style.backgroundColor = 'lightcoral';
+   button_3.style.backgroundColor = 'rgb(194, 139, 58)';
    button_3.style.fontFamily ="sans-serif";
-   button_3.style.color = 'white' 
+   button_3.style.color = 'white'
+   button_3.style.fontWeight ='600' 
 
 
   weatherresult_3.style.textAlign = "center";
