@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap//js/bootstrap.min.js"> -->
+    <title>Dom</title>
+   <style>
+     * {
+            padding: none;
+            margin: none;
+            box-sizing: border-box;
+        }
+  
+        .call {
+            color: #308d46;
+            font-size: 4rem;
+            transition: all .5s ease-in;
+            margin: 0 5px;
+            transform: translateY(3.8rem);
+            opacity: 0;
+        }
+  
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95vw;
+            height: 95vh;
+        }
+  
+        .container {
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+  
+        .calls {
+            opacity: 1;
+            transform: translateY(0);
+        }
+   </style>
+</head>
+<body>
+    <div class="container">
+      <p class="call">Hello</p>
+      <p class="call">Guvi</p>
+  
+    </div>
+    <!-- primary,secondary,sucess,danger,info,warning,light,dark -->
+   
+  <script>
+
+
+    let callback = document.querySelectorAll('.call');
+console.log(callback[0])
+    const names = (anime) => {
+      setTimeout(() => {
+      anime(callback[0])
+        setTimeout(() => {
+         anime(callback[1])
+    },1000)
+      },1000)
+    }
+
+
+      const totalnames = (callbacks) => {
+        callbacks.classList.add('calls')
+      }
+       
+      names(totalnames)
+
+
+
+
+
+
+
+
+
+
+ 
+
+  //   function display (come) {
+  //       document.getElementById('call').innerHTML = come;
+  //   }
+
+  //  let promise = new Promise(( (myreslove , myreject) => {
+  //        let x = 0;
+
+  //        if(x == 0) {
+  //         myreject("Ok")
+  //        }else{ 
+  //         myreject('Error')
+  //        }
+  //  }));
+
+  //  promise.then (
+  //   function (value) {display(value);},
+  //   function (values) {display(values);}
+  //  )
+
+//   let opertaions = (a ,b ,display) => {
+//         let c = a + b; 
+//        console.log(display(a + b));
+//         return c;
+//   }
+
+// console.log(opertaions(4,5 ));
+
+//  let mainfunction = (callback) => {
+//      setTimeout(()=> {
+//       callback([2,3,4,5])
+//      },1000)
+//  }
+
+//  let add = (addtion) => {
+//     let sum = 0;
+//     for(i of addtion) {
+//       sum += i;
+//     }
+//  }
+
+//  mainfunction(add)
+
+//   let add = () => {
+//     return a+ b
+//   }
+
+//   let main = (value) => {
+//      value(3,5)
+//   }
+
+// cnosole.log(main(add))
+
+
+  // let add = (a,b,sums) => {
+//    console.log (a + b);
+//    sums(a + b);
+// }
+
+// let sum = (value) =>{ 
+//   console.log('The add value is : ',value);
+// }
+
+// add(3,5,sum)
+
+//  let name;
+
+//  let callback = () => {
+//     console.log('Done')
+//  }
+
+//  let add = () =>{
+//    return `Hello ` + name
+//  }
+
+//  let common = ( ) => {
+//   //  setTimeout(()=> {
+//   //     name = "Guvi"
+//   //  },1000) 
+//     name = 'Guvi'
+//  }
+
+ 
+// console.log( add())
+// common()
+
+//   function callback () {
+//     console.log('calculation done')
+//   }
+
+
+//   let add = (a ,b , msg) => {
+//      console.log(a + b)
+//     msg()
+//   }
+
+//   let sub = (a, b ,msg) => {
+//      console.log( a - b ) 
+//      msg()
+//   }
+
+//   let multi = (a, b, sun) => {
+//     console.log(a * b)
+//     sun()
+//   }
+
+// add(3,4,callback);
+// sub(2,3,callback);
+// multi(5,5,callback)
+    //   function  callback() {
+    //        console.log('first callback')
+    //   }
+
+     
+
+    //   function  secondcallback() {
+    //         console.log('seond callback')
+    //   }
+    //   setTimeout(callback,2000);
+    //   secondcallback();
+
+    // const meassage = function () {
+    //     console.log('callbacl')
+    // }
+//    setInterval(meassage,3000);
+
+    //  setTimeout(() => {
+    //     console.log('Hii Surya')
+    //  },2000)
+
+    // let meassage = document.querySelector('#call-btn')
+
+    // meassage.addEventListener('click' ,function () {
+    //    setInterval(() => {
+    //     console.log('Hii da surya')
+    //    }, 3000);
+    // })
+
+    // window.onload = function() {
+    //     document.querySelector('#call-btn')
+    //     .addEventListener('click', function () {
+    //         console.log('Hello surya')
+    //   })
+
+    // }
+
+    // let number = (a , b , sub) => {
+    //     sub(a + b);
+    //     return a + b
+    // }
+
+    // const subtraction  = (num) => {
+    //    console.log('The Wakanda king is : ' + num )
+    // }
+
+    // console.log('The Wakanda king is : ' + number("T'" ,"Challa" , subtraction))
+
+//     let completefunction = () => {
+//       console.log("Validated successfully");
+//     };
+
+//     let add = (callback) => {
+//         let a = 2 ; b = 5;
+//         console.log(`Add : ${a + b}` )
+//         callback();
+//     }
+
+//     let sub = (surya) => {
+//         let c = 2 ; d = 5;
+//         console.log(`sub : ${c - d} `)
+//         surya();
+//     }
+
+// add(completefunction)
+// sub(completefunction)
+
+  //  let wishes = setTimeout (() => {
+  //     console.log('Happy Birthday')
+  //  },3000)
+
+  //  let welcome = setInterval (() => {
+  //   console.log('Hello Guvi')
+  //  },5000)
+ 
+  // let name = "hulk";
+
+  // let number = () => {
+  //    setTimeout(() => {
+  //      console.log(`Hello ${name}`)
+  //    },2000);
+  // }
+
+  // let calling = () => {
+  //    console.log(name)
+
+  // }
+
+// number();
+  // calling()
+
+ 
+  // setTimeout(() => {
+  //   console.log('b')
+  // }, 1000);
+  // console.log('a');
+  // console.log('c')
+  // let name;
+  //  let total = () => {
+  //   console.log(1)
+  //  }
+
+  //  setInterval
+    // define a function that takes a time interval and a callback
+// function deployTimer(interval, callback) {
+//   // call the callback function after the specified time interval
+//   setTimeout(function() {
+//     callback();
+//     // call the callback function again after the specified time interval
+//     setTimeout(function() {
+//       callback();
+//       // call the callback function again after the specified time interval
+//       setTimeout(function() {
+//         callback();
+//         // call the callback function again after the specified time interval
+//         setTimeout(function() {
+//           callback();
+//           // call the callback function again after the specified time interval
+//           setTimeout(function() {
+//             callback();
+//             // call the callback function again after the specified time interval
+//             setTimeout(function() {
+//               callback();
+//               // call the callback function again after the specified time interval
+//               setTimeout(function() {
+//                 callback();
+//                 // call the callback function again after the specified time interval
+//                 setTimeout(function() {
+//                   callback();
+//                 }, interval);
+//               }, interval);
+//             }, interval);
+//           }, interval);
+//         }, interval);
+//       }, interval);
+//     }, interval);
+//   }, interval);
+// }
+
+// // call the deployTimer function with a time interval of 1000ms and a callback function
+// deployTimer(1000, function() {
+//   console.log("One second has passed.");
+// });
+     
+    // let number = document.querySelector('#call');
+
+    // let sum = 10;
+
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum
+    //   console.log(sum)
+    //  },1000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -1
+    //   console.log(sum -1)
+    //  },2000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -2;
+    //   console.log(sum -2)
+    //  },3000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -3;
+    //   console.log(sum -3)
+    //  },4000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -4;
+    //   console.log(sum -4)
+    //  },5000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -5;
+    //   console.log(sum -5)
+    //  },6000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -6;
+    //   console.log(sum -6)
+    //  },7000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -7;
+    //   console.log(sum -7)
+    //  },8000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum -8;
+    //   console.log(sum -8)
+    //  },9000)
+    //  setTimeout (() =>{
+    //   document.getElementById('call').innerHTML =  sum - 9;
+    //   console.log(sum -9)
+    //  },10000)
+     
+    //  setTimeout( () => {
+    //   document.getElementById('call').innerHTML = " HAPPY INDEPENDENCE"
+    //  },11000)
+    
+  </script>
+</body>
+</html>
